@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styles from './Statistics.module.scss';
 import generateRandomHexColor from 'utils/getRandomColors';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <>
       <section className={styles.section}>
-        <h2 className={styles.title}>Upload stats</h2>
+        {title && <h2 className={styles.title}>{title}</h2>}
 
         <ul className={styles.list}>
           {stats.map(item => (
@@ -17,7 +17,7 @@ export const Statistics = ({ stats }) => {
               className={styles.item}
             >
               <span className="label">{item.label}</span>
-              <span className="percentage">{item.percentage}%</span>
+              <span className="pecentage">{item.percentage}%</span>
             </li>
           ))}
         </ul>
