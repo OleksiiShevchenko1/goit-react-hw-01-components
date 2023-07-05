@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(0, 145, 255);
+  width: 300px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.onLine {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.offline {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
